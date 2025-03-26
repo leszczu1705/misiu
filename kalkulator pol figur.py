@@ -62,4 +62,4 @@ elif a==6:
         c=float(input("Podaj długość wysokośc iopadającej na ten bok: "))
         print(rownoleglobok(b,c))
 else:
-    print("Takiej figury nie obsługujemy")
+    print("Taka cyfra nie odpowiada zadnej figurze. Podaj cyfrę ponownie.")

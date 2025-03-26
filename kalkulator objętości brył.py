@@ -37,4 +37,4 @@ elif a==4:
     b=float(input("Podaj długość promienia kuli: "))
     print(kula(b))
 else:
-    print("Taka liczba nie odpowiada zadnej bryle. Podaj liczbę ponownie.")
+    print("Taka cyfra nie odpowiada zadnej bryle. Podaj cyfrę ponownie.")
