@@ -10,7 +10,7 @@ def  walec(promień,wysokość):
         return promień*wysokość*math.pi
     else:
         return "Zła liczba"
-def ostroslup(bok1,bok2,wysokość)
+def ostroslup(bok1,bok2,wysokość):
     if bok1>0 and wysokość>0 and bok2>0:
         return bok1*bok2*wysokość/3
     else:
@@ -20,4 +20,4 @@ def stozek(promień,wysokość):
         return promień*wysokość*math.pi/3
     else:
         return "Zła liczba"
-def kula ()
+def kula ():
