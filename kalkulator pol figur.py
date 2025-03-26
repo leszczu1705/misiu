@@ -4,33 +4,61 @@ a=int(input("Podaj liczbę: 1-trójkąt, 2-prostokąt, 3-trapez, 4-koło, 5-romb
 def trojkat(bok, wysokość):
     if bok>0 and wysokość>0:
         return bok*wysokość/2
+    elif bok<=0 and wysokość<=0:
+        return "Niepoprawna długość boku i wysokości"
+    elif bok<=0:
+        return "Niepoprawna długość boku"
     else:
-        return "Zła liczba"
+        return "Niepoprawna długość wysokości"
 def prostokat(bok1,bok2):
     if bok1>0 and bok2>0:
         return bok1*bok2
+    elif bok1<=0 and bok2<=0:
+        return "Niepoprawna długość obu boków"
+    elif bok1<=0:
+        return  "Niepoprawna długość pierwszego boku"
     else:
-        return "Zła liczba"
+        return "Niepoprwawna długość drugiego boku"
 def trapez(podstawa1,podstawa2,wysokość):
     if podstawa1>0 and podstawa2 >0 and wysokość>0:
         return (podstawa1+podstawa2)*wysokość/2
+    elif podstawa1<=0 and podstawa2<=0 and wysokość<=0:
+        return "Niepoprawna długość obu podstaw i wysokości"
+    elif podstawa1<=0 and podstawa2<=0:
+        return "Niepoprawna długość obu podstaw"
+    elif podstawa1<=0 and wysokość<=0:
+        return "Niepoprawna długość pierwszej podstawy i wysokości"
+    elif podstawa2<=0 and wysokość<=0:
+        return "Niepoprawna długość drugiej podstawy i wysokości"
+    elif podstawa1<=0:
+        return "Niepoprawna długośc pierwszej podstawy"
+    elif podstawa2<=0:
+        return "Niepoprawna długość drugiej podstawy"
     else:
-        return "Zła liczba"
+        return "Niepoprawna długość wysokości"
 def kolo(promień):
     if promień>0:
         return promień*math.pi
     else:
-        return "Zła liczba"
+        return "Niepoprawna długość promienia koła"
 def rownoleglobok(podstawa,wysokość):
     if podstawa>0 and wysokość>0:
         return podstawa*wysokość
+    elif podstawa<=0 and wysokość<=0:
+        return "Niepoprawna długość podstawy i wysokości"
+    elif podstawa<=0:
+        return "Niepoprawna długość podstawy"
     else:
-        return "Zła liczba"
+        return "Niepoprawna długość wysokości"
 def romb(przekątna1, przekątna2):
     if przekątna1>0 and przekątna2>0:
         return 1/2*przekątna1*przekątna2
+    elif przekątna1<=0 and przekątna2<=0:
+        return "Niepoprawna długość obu przekątnych"
+    elif przekątna1<=0:
+        return "Niepoprawna długość pierwszej przekątnej"
     else:
-        return "Zła liczba"
+        return "Niepoprawna długośąć drugiej przekątnej"
 if a==1:
     b=float(input("Podaj długość boku: "))
     c=float(input("Podaj długość wysokości opadającej na ten bok: "))
