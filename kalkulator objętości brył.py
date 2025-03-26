@@ -4,22 +4,30 @@ def prostopadloscian(bok1,bok2,bok3):
     if bok1 >0 and bok2>0 and bok3>0:
         return bok1*bok2*bok3
     else: 
-        return "Zła długość boku"
+        return "Zła długość jednego z boków"
 def  walec(promień,wysokość):
     if promień>0 and wysokość >0:
         return promień*promień*wysokość*math.pi
+    elif promień<=0 and wysokość<=0:
+        return "Niepoprawna długość promienia i wysokości"
+    elif promień<=0:
+        return "Niepoprawna długość promienia"
     else:
-        return "Zła liczba"
+        return "Niepoprawna długość wysokości"
 def stozek(promień,wysokość):
     if promień>0 and wysokość>0:
         return promień*promień*wysokość*math.pi/3
+    elif promień<=0 and wysokość<=0:
+        return "Niepoprawna długość promienia i wysokości"
+    elif promień<=0:
+        return "Niepoprawna długość promienia"
     else:
-        return "Zła liczba"
+        return "Niepoprawna długość wysokości"
 def kula(promień):
     if promień>0:
         return promień*promień*promień*math.pi*4/3
     else:
-        return "Zła liczba"
+        return "Niepoprawna długośc promienia"
 if a==1:
     b=float(input("Podaj długość pierwszego boku: "))
     c=float(input("Podaj długość drugiego boku: "))
