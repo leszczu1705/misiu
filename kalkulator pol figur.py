@@ -1,6 +1,6 @@
 import math
 
-a=int(input("Podaj liczbę: 1-trójkąt, 2-prostokąt, 3-trapez, 4-koło, 5-romb, 6-równoległobok"))
+a=int(input("Podaj liczbę: 1-trójkąt, 2-prostokąt, 3-trapez, 4-koło, 5-romb, 6-równoległobok, 7-deltoid, 8-sześciokąt foremny: "))
 def trojkat(bok, wysokość):
     if bok>0 and wysokość>0:
         return bok*wysokość/2
@@ -59,6 +59,11 @@ def romb(przekątna1, przekątna2):
         return "Niepoprawna długość pierwszej przekątnej"
     else:
         return "Niepoprawna długośąć drugiej przekątnej"
+def szesciokat(bok):
+    if bok>0:
+        return 1.5*bok*bok*3**1/2
+    else:
+        return "Niepoprawna długość boku sześciokąta"
 if a==1:
     b=float(input("Podaj długość boku: "))
     c=float(input("Podaj długość wysokości opadającej na ten bok: "))
@@ -89,5 +94,12 @@ elif a==6:
         b=float(input("Podaj długość boku: "))
         c=float(input("Podaj długość wysokośc iopadającej na ten bok: "))
         print(rownoleglobok(b,c))
+elif a==7:
+        b=float(input("Podaj długość pierwszej przekątnej: "))
+        c=float(input("Podaj długość drugiej przekątnej: "))
+        print(romb(b,c))
+elif a==8:
+    b=float(input("Podaj długość boku: "))
+    print(szesciokat(b))
 else:
     print("Taka cyfra nie odpowiada zadnej figurze. Podaj cyfrę ponownie.")
