@@ -51,7 +51,7 @@ elif a==5:
     liczba=int(input("Podaj sposób w jaki sposób chcesz obliczyć pole rombu: 1-0,5*przękątna1*przekątna2  2-podstawa*wysokość: "))
     if liczba==2:
         b=float(input("Podaj długość boku: "))
-        c=float(input("Podaj długość wysokośc iopadającej na ten bok: "))
+        c=float(input("Podaj długość wysokości opadającej na ten bok: "))
         print(rownoleglobok(b,c))
     else:
         b=float(input("Podaj długość pierwszej przekątnej: "))
