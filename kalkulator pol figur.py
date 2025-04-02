@@ -61,7 +61,7 @@ def romb(przekątna1, przekątna2):
         return "Niepoprawna długośąć drugiej przekątnej"
 def szesciokat(bok):
     if bok>0:
-        return 1.5*bok*bok*3**1/2
+        return 1.5*bok*bok*math.sqrt(3)
     else:
         return "Niepoprawna długość boku sześciokąta"
 if a==1:
