@@ -2,7 +2,8 @@ import random
 
 opcje=("kamien","papier","nozyce")
 a=random.choice(opcje)
-b=input("Podaj swoją opcję: ")
+b=input("Podaj swoją opcję (bez polskich znaków i z małej litery): ")
+print("Komputer wybrał: ",a)
 if a==b:
     print("Remis")
 elif a=="kamien" and b=="papier":
