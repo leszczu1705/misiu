@@ -13,3 +13,9 @@ elif a=="kamien" and b=="nozyce":
     print("Przegrałeś")
 elif a=="papier" and b=="nozyce":
     print("Wygrałeś")
+elif a=="nozyce" and  b=="kamien":
+    print("Wygrałeś")
+elif a=="papier" and b=="kamien":
+    print("Przegrałeś")
+else:
+    print("Niepoprawna opcja wpisana")
