@@ -86,10 +86,12 @@ elif a==5:
         b=float(input("Podaj długość boku: "))
         c=float(input("Podaj długość wysokości opadającej na ten bok: "))
         print(rownoleglobok(b,c))
-    else:
+    elif liczba==1:
         b=float(input("Podaj długość pierwszej przekątnej: "))
         c=float(input("Podaj długość drugiej przekątnej: "))
         print(romb(b,c))
+    else:
+        print("Taka cyfra nie odpowiada zadnej metodzie. Podaj cyfrę ponownie.")
 elif a==6:
         b=float(input("Podaj długość boku: "))
         c=float(input("Podaj długość wysokośc iopadającej na ten bok: "))
