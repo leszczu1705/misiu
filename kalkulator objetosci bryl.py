@@ -17,27 +17,27 @@ def prostopadloscian(bok1,bok2,bok3):
         return "Niepoprawna długość drugiego boku. Uruchom program jeszcze raz."
     else:
         return "Niepoprawna długość trzeciego boku. Uruchom program jeszcze raz."
-def  walec(promień,wysokość):
-    if promień>0 and wysokość >0:
-        return promień*promień*wysokość*math.pi
-    elif promień<=0 and wysokość<=0:
+def  walec(promien,wysokosc):
+    if promien>0 and wysokosc >0:
+        return promien*promien*wysokosc*math.pi
+    elif promien<=0 and wysokosc<=0:
         return "Niepoprawna długość promienia i wysokości. Uruchom program jeszcze raz."
-    elif promień<=0:
+    elif promien<=0:
         return "Niepoprawna długość promienia. Uruchom program jeszcze raz."
     else:
         return "Niepoprawna długość wysokości. Uruchom program jeszcze raz."
-def stozek(promień,wysokość):
-    if promień>0 and wysokość>0:
-        return promień*promień*wysokość*math.pi/3
-    elif promień<=0 and wysokość<=0:
+def stozek(promien,wysokosc):
+    if promien>0 and wysokosc>0:
+        return promien*promien*wysokosc*math.pi/3
+    elif promien<=0 and wysokosc<=0:
         return "Niepoprawna długość promienia i wysokości. Uruchom program jeszcze raz."
-    elif promień<=0:
+    elif promien<=0:
         return "Niepoprawna długość promienia. Uruchom program jeszcze raz."
     else:
         return "Niepoprawna długość wysokości. Uruchom program jeszcze raz."
-def kula(promień):
-    if promień>0:
-        return promień*promień*promień*math.pi*4/3
+def kula(promien):
+    if promien>0:
+        return promien*promien*promien*math.pi*4/3
     else:
         return "Niepoprawna długośc promienia. Uruchom program jeszcze raz."
 if a==1:
