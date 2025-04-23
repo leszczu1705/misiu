@@ -1,5 +1,5 @@
 import math
-a=int(input("Podaj cyfrę, odpowiadającą bryle ,której pole powierzchni calkowitej chcesz obliczyć: 1-prostopadłościan, 2-walec, 3-stozek, 4-kula: "))
+a=int(input("Podaj cyfrę, odpowiadającą bryle, której pole powierzchni calkowitej chcesz obliczyć: 1-prostopadłościan, 2-walec, 3-stozek, 4-kula: "))
 def prostopadloscian(bok1,bok2,bok3):
     if bok1>0 and bok2>0 and bok3>0:
         return 2*(bok1*bok2+bok2*bok3+bok1*bok3)
