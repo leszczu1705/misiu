@@ -5,70 +5,70 @@ def trojkat(bok, wysokość):
     if bok>0 and wysokość>0:
         return bok*wysokość/2
     elif bok<=0 and wysokość<=0:
-        return "Niepoprawna długość boku i wysokości"
+        return "Niepoprawna długość boku i wysokości. Uruchom program jeszcze raz."
     elif bok<=0:
-        return "Niepoprawna długość boku"
+        return "Niepoprawna długość boku. Uruchom program jeszcze raz."
     else:
-        return "Niepoprawna długość wysokości"
+        return "Niepoprawna długość wysokości. Uruchom program jeszcze raz."
 def prostokat(bok1,bok2):
     if bok1>0 and bok2>0:
         return bok1*bok2
     elif bok1<=0 and bok2<=0:
-        return "Niepoprawna długość obu boków"
+        return "Niepoprawna długość obu boków. Uruchom program jeszcze raz."
     elif bok1<=0:
-        return  "Niepoprawna długość pierwszego boku"
+        return  "Niepoprawna długość pierwszego boku. Uruchom program jeszcze raz."
     else:
-        return "Niepoprwawna długość drugiego boku"
+        return "Niepoprwawna długość drugiego boku. Uruchom program jeszcze raz."
 def trapez(podstawa1,podstawa2,wysokość):
     if podstawa1>0 and podstawa2 >0 and wysokość>0:
         return (podstawa1+podstawa2)*wysokość/2
     elif podstawa1<=0 and podstawa2<=0 and wysokość<=0:
-        return "Niepoprawna długość obu podstaw i wysokości"
+        return "Niepoprawna długość obu podstaw i wysokości. Uruchom program jeszcze raz."
     elif podstawa1<=0 and podstawa2<=0:
-        return "Niepoprawna długość obu podstaw"
+        return "Niepoprawna długość obu podstaw. Uruchom program jeszcze raz."
     elif podstawa1<=0 and wysokość<=0:
-        return "Niepoprawna długość pierwszej podstawy i wysokości"
+        return "Niepoprawna długość pierwszej podstawy i wysokości. Uruchom program jeszcze raz."
     elif podstawa2<=0 and wysokość<=0:
-        return "Niepoprawna długość drugiej podstawy i wysokości"
+        return "Niepoprawna długość drugiej podstawy i wysokości. Uruchom program jeszcze raz."
     elif podstawa1<=0:
-        return "Niepoprawna długośc pierwszej podstawy"
+        return "Niepoprawna długośc pierwszej podstawy. Uruchom program jeszcze raz."
     elif podstawa2<=0:
-        return "Niepoprawna długość drugiej podstawy"
+        return "Niepoprawna długość drugiej podstawy. Uruchom program jeszcze raz."
     else:
-        return "Niepoprawna długość wysokości"
+        return "Niepoprawna długość wysokości. Uruchom program jeszcze raz."
 def kolo(promień):
     if promień>0:
         return promień*math.pi
     else:
-        return "Niepoprawna długość promienia koła"
+        return "Niepoprawna długość promienia koła. Uruchom program jeszcze raz."
 def rownoleglobok(podstawa,wysokość):
     if podstawa>0 and wysokość>0:
         return podstawa*wysokość
     elif podstawa<=0 and wysokość<=0:
-        return "Niepoprawna długość podstawy i wysokości"
+        return "Niepoprawna długość podstawy i wysokości. Uruchom program jeszcze raz."
     elif podstawa<=0:
-        return "Niepoprawna długość podstawy"
+        return "Niepoprawna długość podstawy. Uruchom program jeszcze raz."
     else:
-        return "Niepoprawna długość wysokości"
+        return "Niepoprawna długość wysokości. Uruchom program jeszcze raz."
 def romb(przekątna1, przekątna2):
     if przekątna1>0 and przekątna2>0:
         return 1/2*przekątna1*przekątna2
     elif przekątna1<=0 and przekątna2<=0:
-        return "Niepoprawna długość obu przekątnych"
+        return "Niepoprawna długość obu przekątnych. Uruchom program jeszcze raz."
     elif przekątna1<=0:
-        return "Niepoprawna długość pierwszej przekątnej"
+        return "Niepoprawna długość pierwszej przekątnej. Uruchom program jeszcze raz."
     else:
-        return "Niepoprawna długośąć drugiej przekątnej"
+        return "Niepoprawna długośąć drugiej przekątnej. Uruchom program jeszcze raz."
 def szesciokat(bok):
     if bok>0:
         return 1.5*bok*bok*math.sqrt(3)
     else:
-        return "Niepoprawna długość boku sześciokąta"
+        return "Niepoprawna długość boku sześciokąta. Uruchom program jeszcze raz."
 def trojkatrownoboczny(bok):
     if bok>0:
         return bok*bok*math.sqrt(3)/4
     else:
-        return "Niepoprawna długość boku"
+        return "Niepoprawna długość boku. Uruchom program jeszcze raz."
 if a==1:
     b=float(input("Podaj długość boku: "))
     c=float(input("Podaj długość wysokości opadającej na ten bok: "))
