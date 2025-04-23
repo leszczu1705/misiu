@@ -1,5 +1,5 @@
 import math
-a=int(input("Podaj liczbę, odpowiadającą bryle, której objętość chcesz obliczyć: 1-prostopadłościan, 2-walec, 3-stozek, 4-kula: "))
+a=int(input("Podaj cyfrę, odpowiadającą bryle, której objętość chcesz obliczyć: 1-prostopadłościan, 2-walec, 3-stozek, 4-kula: "))
 def prostopadloscian(bok1,bok2,bok3):
     if bok1 >0 and bok2>0 and bok3>0:
         return bok1*bok2*bok3
