@@ -4,42 +4,42 @@ def prostopadloscian(bok1,bok2,bok3):
     if bok1 >0 and bok2>0 and bok3>0:
         return bok1*bok2*bok3
     elif bok1<=0 and bok2<=0 and bok3<=0:
-        return "Niepoprawna długość wszystkich trzech boków"
+        return "Niepoprawna długość wszystkich trzech boków. Uruchom program jeszcze raz."
     elif bok1<=0 and bok2<=0:
-        return "Niepoprawna długość pierwszego i drugiego boku"
+        return "Niepoprawna długość pierwszego i drugiego boku. Uruchom program jeszcze raz."
     elif bok1<=0 and bok3<=0:
-        return "Niepoprawna długość pierwszego i trzeciego boku"
+        return "Niepoprawna długość pierwszego i trzeciego boku. Uruchom program jeszcze raz."
     elif bok2<=0 and bok3<=0:
-        return "Niepoprawna długość drugiego i trzeciego boku"
+        return "Niepoprawna długość drugiego i trzeciego boku. Uruchom program jeszcze raz."
     elif bok1<=0:
-        return "Niepoprawna długośc pierwszego boku"
+        return "Niepoprawna długośc pierwszego boku. Uruchom program jeszcze raz."
     elif bok2<=0:
-        return "Niepoprawna długość drugiego boku"
+        return "Niepoprawna długość drugiego boku. Uruchom program jeszcze raz."
     else:
-        return "Niepoprawna długość trzeciego boku"
+        return "Niepoprawna długość trzeciego boku. Uruchom program jeszcze raz."
 def  walec(promień,wysokość):
     if promień>0 and wysokość >0:
         return promień*promień*wysokość*math.pi
     elif promień<=0 and wysokość<=0:
-        return "Niepoprawna długość promienia i wysokości"
+        return "Niepoprawna długość promienia i wysokości. Uruchom program jeszcze raz."
     elif promień<=0:
-        return "Niepoprawna długość promienia"
+        return "Niepoprawna długość promienia. Uruchom program jeszcze raz."
     else:
-        return "Niepoprawna długość wysokości"
+        return "Niepoprawna długość wysokości. Uruchom program jeszcze raz."
 def stozek(promień,wysokość):
     if promień>0 and wysokość>0:
         return promień*promień*wysokość*math.pi/3
     elif promień<=0 and wysokość<=0:
-        return "Niepoprawna długość promienia i wysokości"
+        return "Niepoprawna długość promienia i wysokości. Uruchom program jeszcze raz."
     elif promień<=0:
-        return "Niepoprawna długość promienia"
+        return "Niepoprawna długość promienia. Uruchom program jeszcze raz."
     else:
-        return "Niepoprawna długość wysokości"
+        return "Niepoprawna długość wysokości. Uruchom program jeszcze raz."
 def kula(promień):
     if promień>0:
         return promień*promień*promień*math.pi*4/3
     else:
-        return "Niepoprawna długośc promienia"
+        return "Niepoprawna długośc promienia. Uruchom program jeszcze raz."
 if a==1:
     b=float(input("Podaj długość pierwszego boku: "))
     c=float(input("Podaj długość drugiego boku: "))
