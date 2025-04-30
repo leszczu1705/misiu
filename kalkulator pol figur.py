@@ -36,9 +36,9 @@ def trapez(podstawa1,podstawa2,wysokosc):
         return "Niepoprawna długość drugiej podstawy. Uruchom program jeszcze raz."
     else:
         return "Niepoprawna długość wysokości. Uruchom program jeszcze raz."
-def kolo(promień):
-    if promień>0:
-        return promień*math.pi
+def kolo(promien):
+    if promien>0:
+        return promien*math.pi
     else:
         return "Niepoprawna długość promienia koła. Uruchom program jeszcze raz."
 def rownoleglobok(podstawa,wysokosc):
