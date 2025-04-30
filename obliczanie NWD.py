@@ -6,7 +6,7 @@ if a>0 and b>0:
             a-=b
         else:
             b-=a
-        print(a)
+    print(a)
 elif a<=0 and b<=0:
     print("Obie liczby nie są większe od zera. Podaj liczby ponownie")
 elif a<=0:
