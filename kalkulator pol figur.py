@@ -52,7 +52,7 @@ def rownoleglobok(podstawa,wysokosc):
         return "Niepoprawna długość wysokości. Uruchom program jeszcze raz."
 def romb(przekatna1, przekatna2):
     if przekatna1>0 and przekatna2>0:
-        return 1/2*przekątna1*przekątna2
+        return 1/2*przekatna1*przekatna2
     elif przekatna1<=0 and przekatna2<=0:
         return "Niepoprawna długość obu przekątnych. Uruchom program jeszcze raz."
     elif przekatna1<=0:
