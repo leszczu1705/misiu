@@ -4,19 +4,20 @@ opcje=("kamien","papier","nozyce")
 a=random.choice(opcje)
 b=input("Podaj swoją opcję (bez polskich znaków i z małej litery): ")
 print("Komputer wybrał: ",a)
-if a==b:
-    print("Remis")
-elif a=="kamien" and b=="papier":
-    print("Wygrałeś")
-elif a=="nozyce" and b=="papier":
-    print("Przegrałeś")
-elif a=="kamien" and b=="nozyce":
-    print("Przegrałeś")
-elif a=="papier" and b=="nozyce":
-    print("Wygrałeś")
-elif a=="nozyce" and  b=="kamien":
-    print("Wygrałeś")
-elif a=="papier" and b=="kamien":
-    print("Przegrałeś")
+if b in opcje:
+    if a==b:
+        print("Remis")
+    elif a=="kamien" and b=="papier":
+        print("Wygrałeś")
+    elif a=="nozyce" and b=="papier":
+        print("Przegrałeś")
+    elif a=="kamien" and b=="nozyce":
+        print("Przegrałeś")
+    elif a=="papier" and b=="nozyce":
+        print("Wygrałeś")
+    elif a=="nozyce" and  b=="kamien":
+        print("Wygrałeś")
+    elif a=="papier" and b=="kamien":
+        print("Przegrałeś")
 else:
-    print("Niepoprawna opcja wpisana")
+    print("Niepoprawna opcja wpisana. Uruchom program ponownie.")
