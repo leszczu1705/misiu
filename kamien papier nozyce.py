@@ -3,7 +3,7 @@ import random
 opcje=("kamien","papier","nozyce")
 a=random.choice(opcje)
 b=input("Podaj swoją opcję (bez polskich znaków i z małej litery): ")
-print("Komputer wybrał: ",a)
+print("Komputer wybrał:",a)
 if b in opcje:
     if a==b:
         print("Remis")
