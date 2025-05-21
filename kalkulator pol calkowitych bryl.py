@@ -1,22 +1,22 @@
 import math
 a=int(input("Podaj cyfrę, odpowiadającą bryle, której pole powierzchni calkowitej chcesz obliczyć: 1-prostopadłościan, 2-walec, 3-stozek, 4-kula: "))
-def prostopadloscian(bok1,bok2,bok3):
-    if bok1>0 and bok2>0 and bok3>0:
-        return 2*(bok1*bok2+bok2*bok3+bok1*bok3)
-    elif bok1<=0 and bok2<=0 and bok3<=0:
-        return "Niepoprawna długość wszystkich trzech boków. Uruchom program jeszcze raz."
-    elif bok1<=0 and bok2<=0:
-        return "Niepoprawna długość pierwszego i drugiego boku. Uruchom program jeszcze raz."
-    elif bok1<=0 and bok3<=0:
-        return "Niepoprawna długość pierwszego i trzeciego boku. Uruchom program jeszcze raz."
-    elif bok2<=0 and bok3<=0:
-        return "Niepoprawna długość drugiego i trzeciego boku. Uruchom program jeszcze raz."
-    elif bok1<=0:
-        return "Niepoprawna długośc pierwszego boku. Uruchom program jeszcze raz."
-    elif bok2<=0:
-        return "Niepoprawna długość drugiego boku. Uruchom program jeszcze raz."
+def prostopadloscian(dlugosc,szerokosc,grubosc):
+    if dlugosc >0 and szerokosc>0 and grubosc>0:
+        return 2*(dlugosc*szerokosc+szerokosc*grubosc+dlugosc*grubosc)
+    elif dlugosc<=0 and szerokosc<=0 and grubosc<=0:
+        return "Niepoprawna długość, szerokość i grubość prostopadłościanu. Uruchom program jeszcze raz."
+    elif dlugosc<=0 and szerokosc<=0:
+        return "Niepoprawna długość i szerokość prostopadłościanu. Uruchom program jeszcze raz."
+    elif dlugosc<=0 and grubosc<=0:
+        return "Niepoprawna długość i grubość prostopadłościanu. Uruchom program jeszcze raz."
+    elif szerokosc<=0 and grubosc<=0:
+        return "Niepoprawna szerokość i grubość prostopadłościanu. Uruchom program jeszcze raz."
+    elif dlugosc<=0:
+        return "Niepoprawna długość prostopadłościanu. Uruchom program jeszcze raz."
+    elif szerokosc<=0:
+        return "Niepoprawna szerokość prostopadłościanu. Uruchom program jeszcze raz."
     else:
-        return "Niepoprawna długość trzeciego boku. Uruchom program jeszcze raz."
+        return "Niepoprawna grubość prostopadłościanu. Uruchom program jeszcze raz."
 def walec(promien,wysokosc):
     if promien>0 and wysokosc>0:
         return 2*math.pi*promien*(promien+wysokosc)
@@ -41,9 +41,9 @@ def kula(promien):
     else:
         return "Niepoprawna długość promienia. Uruchom program jeszcze raz."
 if a==1:
-    b=float(input("Podaj długość pierwszego boku: "))
-    c=float(input("Podaj długość drugiego boku: "))
-    d=float(input("Podaj długość trzeciego boku: "))
+    b=float(input("Podaj długość prostopadłościanu: "))
+    c=float(input("Podaj szerokość prostopadłościanu: "))
+    d=float(input("Podaj grubość prostopadłościanu: "))
     print(prostopadloscian(b,c,d))
 elif a==2:
     b=float(input("Podaj długość promienia podstawy: "))
