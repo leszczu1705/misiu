@@ -1,5 +1,5 @@
-a=int(input("Podaj pierwszą liczbę całkowitą większą od zera: "))
-b=int(input("Podaj drugą liczbę całkowitą większą od zera: "))
+a=int(input("Podaj pierwszą liczbę naturalną: "))
+b=int(input("Podaj drugą liczbę naturalną: "))
 c=a
 d=b
 if a>0 and b>0:
