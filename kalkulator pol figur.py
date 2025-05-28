@@ -1,6 +1,6 @@
 import math
+import sys
 
-a=int(input("Podaj cyfrę, odpowiadającą figurze, której pole chcesz obliczyć: 1-trójkąt, 2-prostokąt, 3-trapez, 4-koło, 5-romb, 6-równoległobok, 7-deltoid, 8-sześciokąt foremny, 9-trójkąt równoboczny: "))
 def trojkat(podstawa, wysokosc):
     if podstawa>0 and wysokosc>0:
         return podstawa*wysokosc/2
@@ -69,6 +69,14 @@ def trojkatrownoboczny(bok):
         return bok*bok*math.sqrt(3)/4
     else:
         return "Niepoprawna długość boku. Uruchom program jeszcze raz."
+    
+
+
+a=input("Podaj cyfrę, odpowiadającą figurze, której pole chcesz obliczyć: 1-trójkąt, 2-prostokąt, 3-trapez, 4-koło, 5-romb, 6-równoległobok, 7-deltoid, 8-sześciokąt foremny, 9-trójkąt równoboczny: ")
+if not a.isdigit():
+    print("Nie podałeś liczb. Uruchom program ponownie.")
+    exit()
+a=int(a)
 if a==1:
     b=float(input("Podaj długość boku: "))
     c=float(input("Podaj długość wysokości opadającej na ten bok: "))

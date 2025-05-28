@@ -1,5 +1,5 @@
 import math
-a=int(input("Podaj cyfrę, odpowiadającą bryle, której objętość chcesz obliczyć: 1-prostopadłościan, 2-walec, 3-stozek, 4-kula: "))
+a=input("Podaj cyfrę, odpowiadającą bryle, której objętość chcesz obliczyć: 1-prostopadłościan, 2-walec, 3-stozek, 4-kula: ")
 def prostopadloscian(dlugosc,szerokosc,grubosc):
     if dlugosc >0 and szerokosc>0 and grubosc>0:
         return dlugosc*szerokosc*grubosc
@@ -40,6 +40,13 @@ def kula(promien):
         return promien*promien*promien*math.pi*4/3
     else:
         return "Niepoprawna długośc promienia. Uruchom program jeszcze raz."
+    
+
+
+if not a.isdigit():
+    print("Nie podałeś liczby. Uruchom program ponownie")
+    exit()
+a=int(a)
 if a==1:
     b=float(input("Podaj długość prostopadłościanu: "))
     c=float(input("Podaj szerokość prostopadłościanu: "))

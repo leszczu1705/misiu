@@ -1,5 +1,9 @@
 a=int(input("Podaj pierwszą liczbę naturalną: "))
 b=int(input("Podaj drugą liczbę naturalną: "))
+if not a.isdigit():
+    print("Nie podałeś liczby. Uruchom program ponownie")
+    exit()
+a=int(a)
 if a>0 and b>0:
     while a!=b:
         if a>b:

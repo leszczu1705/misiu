@@ -1,5 +1,9 @@
 import math
-a=int(input("Podaj cyfrę, odpowiadającą bryle, której pole powierzchni calkowitej chcesz obliczyć: 1-prostopadłościan, 2-walec, 3-stozek, 4-kula: "))
+a=input("Podaj litery, odpowiadającą bryle, której pole powierzchni calkowitej chcesz obliczyć: 1-prostopadłościan, 2-walec, 3-stozek, 4-kula: ")
+if not a.isdigit():
+    print("Nie podałeś liczby. Uruchom program ponownie")
+    exit()
+a=int(a)
 def prostopadloscian(dlugosc,szerokosc,grubosc):
     if dlugosc >0 and szerokosc>0 and grubosc>0:
         return 2*(dlugosc*szerokosc+szerokosc*grubosc+dlugosc*grubosc)
@@ -57,4 +61,4 @@ elif a==4:
     b=float(input("Podaj długość promienia kuli: "))
     print(kula(b))
 else:
-    print("Taka cyfra nie odpowiada zadnej bryle. Wprowadź cyfrę jeszcze raz.")
+    print("Taka cyfra nie odpowiada zadnej bryle. Wprowadź cyfrę jeszcze raz.") 
