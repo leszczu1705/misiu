@@ -44,7 +44,7 @@ def kula(promien):
 
 
 if not a.isdigit():
-    print("Nie podałeś liczby. Uruchom program ponownie")
+    print("Zmienna jest tekstem, liczbą niecałkowitą lub liczbą ujemną, a nie liczbą naturalną. Uruchom program ponownie.")
     exit()
 a=int(a)
 if a==1:

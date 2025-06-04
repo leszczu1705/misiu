@@ -1,7 +1,7 @@
 import math
 a=input("Podaj litery, odpowiadającą bryle, której pole powierzchni calkowitej chcesz obliczyć: 1-prostopadłościan, 2-walec, 3-stozek, 4-kula: ")
 if not a.isdigit():
-    print("Nie podałeś liczby. Uruchom program ponownie")
+    print("Zmienna jest tekstem, liczbą niecałkowitą lub liczbą ujemną, a nie liczbą naturalną. Uruchom program ponownie.")
     exit()
 a=int(a)
 def prostopadloscian(dlugosc,szerokosc,grubosc):
