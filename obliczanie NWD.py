@@ -1,19 +1,19 @@
-a=int(input("Podaj pierwszą liczbę naturalną: "))
-b=int(input("Podaj drugą liczbę naturalną: "))
+a=input("Podaj pierwszą liczbę naturalną: ")
+b=input("Podaj drugą liczbę naturalną: ")
+if not a.isdigit() and not b.isdigit():
+    print("Obie zmienne są liczbami niecałkowitymi lub tekstami, lub liczbami mniejszymi od zera. Uruchom program ponownie.")
+    exit()
 if not a.isdigit():
-    print("Nie podałeś liczby. Uruchom program ponownie")
+    print("Pierwsza zmienna jest liczbą niecałkowitą lub tekstem, lub liczbą mniejszą od zera. Uruchom program ponownie.")
+    exit()
+if not b.isdigit():
+    print("Druga zmienna jest liczbą niecałkowitą lub tekstem, lub liczbą mniejszą od zera. Uruchom program ponownie.")
     exit()
 a=int(a)
-if a>0 and b>0:
-    while a!=b:
-        if a>b:
-            a-=b
-        else:
+b=int(b)
+while a!=b:
+    if a>b:
+        a-=b
+    else:
             b-=a
-    print(a)
-elif a<=0 and b<=0:
-    print("Obie liczby nie są większe od zera. Podaj liczby ponownie")
-elif a<=0:
-    print("Pierwsza liczba jest mniejsza od zera. Podaj liczby ponownie")
-else:
-    print("Druga liczba jest mniejsza od zera. Podaj liczby ponownie")
+print(a)
