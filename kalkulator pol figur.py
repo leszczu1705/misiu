@@ -94,7 +94,11 @@ elif a==4:
     b=float(input("Podaj długość promienia koła: "))
     print(kolo(b))
 elif a==5:
-    liczba=int(input("Podaj sposób w jaki sposób chcesz obliczyć pole rombu: 1-0,5*przękątna1*przekątna2  2-podstawa*wysokość: "))
+    liczba=input("Podaj sposób w jaki sposób chcesz obliczyć pole rombu: 1-0,5*przękątna1*przekątna2  2-podstawa*wysokość: ")
+    if not liczba.isdigit():
+        print("Zmienna jest tekstem, liczbą niecałkowitą lub liczbą ujemną, a nie liczbą naturalną. Uruchom program ponownie.")
+        exit()
+    liczba=int(liczba)
     if liczba==2:
         b=float(input("Podaj długość boku: "))
         c=float(input("Podaj długość wysokości opadającej na ten bok: "))
